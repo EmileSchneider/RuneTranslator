@@ -26,5 +26,21 @@ namespace TranslatorTests
             var word = "hello";
             var runes = "\u16A0\u16D6\u16DA\u16DA\u16DF";
         }
+
+        [Test]
+        public void TestSentenceWithWhiteSpace()
+        {
+            Translator translator = new Translator();
+            var word = "hello hello";
+            var runes = "\u16A0\u16D6\u16DA\u16DA\u16DF \u16A0\u16D6\u16DA\u16DA\u16DF";
+        }
+
+        [Test]
+        public void TestPunctuation()
+        {
+            Translator translator = new Translator();
+            var word = "hello.";
+            var runes = "\u16A0\u16D6\u16DA\u16DA\u16DF.";
+        }
     }
 }

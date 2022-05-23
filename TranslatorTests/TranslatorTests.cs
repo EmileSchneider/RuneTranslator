@@ -24,7 +24,7 @@ namespace TranslatorTests
         {
             Translator translator = new Translator();
             var word = "hello";
-            var runes = "";
+            var runes = "\u16A0\u16D6\u16DA\u16DA\u16DF";
         }
     }
 }

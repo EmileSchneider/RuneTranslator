@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuneTranslator", "RuneTranslator\RuneTranslator.csproj", "{C6A2CCCD-9306-4581-9426-0C52EA9D977A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuneTranslator", "RuneTranslator\RuneTranslator.csproj", "{C6A2CCCD-9306-4581-9426-0C52EA9D977A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunelatorGui", "RunelatorGui\RunelatorGui.csproj", "{C3B0931F-9B42-4D28-91EB-33EF2C642A73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunelatorGui", "RunelatorGui\RunelatorGui.csproj", "{C3B0931F-9B42-4D28-91EB-33EF2C642A73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslatorTests", "TranslatorTests\TranslatorTests.csproj", "{66B93B75-C323-4E57-991F-33F248E67EE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "TranslatorTests\UnitTests.csproj", "{66B93B75-C323-4E57-991F-33F248E67EE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

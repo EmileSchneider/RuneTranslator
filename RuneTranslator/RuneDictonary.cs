@@ -24,8 +24,8 @@ namespace RuneTranslator
             _runes.Add('E', "\u16D6");
             _runes.Add('F', "\u16A0");
             _runes.Add('G', "\u16B7");
-            _runes.Add('H', "\u16A0");
-            _runes.Add('I', "\u16BB");
+            _runes.Add('H', "\u16BA");
+            _runes.Add('I', "\u16C1");
             _runes.Add('J', "\u16C3");
             _runes.Add('K', "\u16B2");
             _runes.Add('L', "\u16DA");

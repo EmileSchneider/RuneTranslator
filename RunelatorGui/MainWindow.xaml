@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RunelatorGui"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Runelator" Height="600" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Orientation="Vertical">
+            <Label FontSize="25" HorizontalAlignment="Center" >Runelator 3000 XL</Label>
+            <TextBox x:Name="input" Height="400" Margin="10"   TextWrapping="Wrap"
+                    AcceptsReturn="True"
+                VerticalScrollBarVisibility="Visible"/>
+            <Button HorizontalAlignment="Center" Click="Button_Click">Runlate</Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <Label FontSize="25" HorizontalAlignment="Center">Runes</Label>
+            <TextBlock x:Name="output" Height="400" Margin="10" FontSize="20" TextWrapping="Wrap"/>
+            <Button Click="Button_Click_ToClipboard" HorizontalAlignment="Center">Copy to Clipboard</Button>
+            <Label x:Name="ConfirmationTextLabel"></Label>
+        </StackPanel>
 
     </Grid>
 </Window>

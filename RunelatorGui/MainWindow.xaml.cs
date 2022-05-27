@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using RuneTranslator;
 namespace RunelatorGui
 {
     /// <summary>
@@ -20,9 +20,21 @@ namespace RunelatorGui
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Translator translator = new Translator();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var runes = translator.ToRune(input.Text);
+            output.Text = runes;
+        }
+
+        private void Button_Click_ToClipboard(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText(output.Text);
         }
     }
 }

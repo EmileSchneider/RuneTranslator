@@ -13,8 +13,12 @@ namespace RuneTranslator
         public string ToRune(String english)
         {
             var runeString = new StringBuilder();
-            foreach (char c in english)
+            foreach (char c in english.ToUpper())
             {
+                if(Char.IsDigit(c) || Char.IsPunctuation(c) || Char.IsWhiteSpace(c))
+                {
+                    runeString.Append(c);
+                }
                 runeString.Append(_runeDictonary.GetRune(c));
             }
             return runeString.ToString();

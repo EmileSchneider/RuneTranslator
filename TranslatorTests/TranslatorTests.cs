@@ -11,11 +11,38 @@ namespace TranslatorTests
         }
 
         [Test]
-        public void TestSingleChar()
+        public void TestSingleCharH()
         {
             Translator translator = new Translator();
             var english = "H";
-            var runeH = "\u16A0";
+            var runeH = "\u16BA";
+            Assert.AreEqual(runeH, translator.ToRune(english));
+        }
+
+        [Test]
+        public void TestSingleCharI()
+        {
+            Translator translator = new Translator();
+            var english = "I";
+            var runeH = "\u16C1";
+            Assert.AreEqual(runeH, translator.ToRune(english));
+        }
+
+        [Test]
+        public void TestSingleCharZ()
+        {
+            Translator translator = new Translator();
+            var english = "Z";
+            var runeH = "\u16C9";
+            Assert.AreEqual(runeH, translator.ToRune(english));
+        }
+
+        [Test]
+        public void TestSingleCharN()
+        {
+            Translator translator = new Translator();
+            var english = "N";
+            var runeH = "\u16BE";
             Assert.AreEqual(runeH, translator.ToRune(english));
         }
 
